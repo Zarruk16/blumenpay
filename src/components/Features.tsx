@@ -1,11 +1,11 @@
 
 import React from 'react';
-import { Globe, Wallet, Users, Briefcase, Dollar } from 'lucide-react';
+import { Globe, Wallet, Users, Briefcase, DollarSign } from 'lucide-react';
 
 const Features = () => {
   const features = [
     {
-      icon: <Dollar className="feature-icon" />,
+      icon: <DollarSign className="feature-icon" />,
       title: "Advanced Revenue Collection",
       description: "Efficient revenue collection, cash synergies, and automated reconciliation tailored for organizations."
     },
