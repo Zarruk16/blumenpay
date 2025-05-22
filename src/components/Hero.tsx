@@ -49,8 +49,8 @@ const Hero = () => {
                 <div className="bg-white shadow-2xl rounded-3xl p-4 sm:p-4 md:p-10 border border-gray-100 w-full">
                   <div className="mb-4 sm:mb-6 flex items-center justify-between">
                     <div className="flex items-center">
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gradient-to-r from-blumen-primary to-blumen-accent flex items-center justify-center">
-                        <Wallet className="h-5 w-5 sm:h-7 sm:w-7 text-white" />
+                      <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-r from-blumen-primary to-blumen-accent flex items-center justify-center">
+                        <Wallet className="h-4 w-4 md:h-6 md:w-6 text-white" />
                       </div>
                       <span className="ml-3 sm:ml-4 text-lg sm:text-xl font-semibold text-blumen-dark">BlumenPay Dashboard</span>
                     </div>
