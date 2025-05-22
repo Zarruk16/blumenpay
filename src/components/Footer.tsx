@@ -1,7 +1,46 @@
-
 import React from 'react';
+import { 
+  FaFacebookF, 
+  FaTwitter, 
+  FaLinkedinIn, 
+  FaInstagram,
+  FaChevronRight 
+} from 'react-icons/fa';
 
 const Footer = () => {
+  const socialMedia = [
+    { name: 'facebook', icon: <FaFacebookF />, url: '#' },
+    { name: 'twitter', icon: <FaTwitter />, url: '#' },
+    { name: 'linkedin', icon: <FaLinkedinIn />, url: '#' },
+    { name: 'instagram', icon: <FaInstagram />, url: '#' }
+  ];
+
+  const products = [
+    'Payment Gateway', 
+    'Rural Access', 
+    'Business Analytics', 
+    'Fraud Protection', 
+    'Multi-currency Support'
+  ];
+
+  const resources = [
+    'Documentation', 
+    'API Reference', 
+    'Case Studies', 
+    'Blog', 
+    'Changelog', 
+    'Support'
+  ];
+
+  const company = [
+    'About Us', 
+    'Careers', 
+    'Partners', 
+    'Contact', 
+    'Press Kit', 
+    'Legal'
+  ];
+
   return (
     <footer className="bg-blumen-dark text-gray-300 py-12">
       <div className="container mx-auto px-4">
@@ -15,10 +54,14 @@ const Footer = () => {
               with special focus on Africa, India, and beyond.
             </p>
             <div className="flex space-x-4">
-              {['facebook', 'twitter', 'linkedin', 'instagram'].map((social) => (
-                <a key={social} href="#" className="text-gray-400 hover:text-white">
-                  <span className="sr-only">{social}</span>
-                  <div className="w-5 h-5 bg-gray-400 hover:bg-white transition-colors"></div>
+              {socialMedia.map((social) => (
+                <a 
+                  key={social.name}
+                  href={social.url} 
+                  className="text-gray-400 hover:text-white transition-colors"
+                  aria-label={social.name}
+                >
+                  {social.icon}
                 </a>
               ))}
             </div>
@@ -27,8 +70,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Products</h3>
             <ul className="space-y-2">
-              {['Payment Gateway', 'Rural Access', 'Business Analytics', 'Fraud Protection', 'Multi-currency Support'].map((item) => (
-                <li key={item}>
+              {products.map((item) => (
+                <li key={item} className="flex items-center">
+                  <FaChevronRight className="text-blumen-primary mr-2 text-xs" />
                   <a href="#" className="hover:text-white hover:underline transition-colors">
                     {item}
                   </a>
@@ -40,8 +84,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Resources</h3>
             <ul className="space-y-2">
-              {['Documentation', 'API Reference', 'Case Studies', 'Blog', 'Changelog', 'Support'].map((item) => (
-                <li key={item}>
+              {resources.map((item) => (
+                <li key={item} className="flex items-center">
+                  <FaChevronRight className="text-blumen-primary mr-2 text-xs" />
                   <a href="#" className="hover:text-white hover:underline transition-colors">
                     {item}
                   </a>
@@ -53,8 +98,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Company</h3>
             <ul className="space-y-2">
-              {['About Us', 'Careers', 'Partners', 'Contact', 'Press Kit', 'Legal'].map((item) => (
-                <li key={item}>
+              {company.map((item) => (
+                <li key={item} className="flex items-center">
+                  <FaChevronRight className="text-blumen-primary mr-2 text-xs" />
                   <a href="#" className="hover:text-white hover:underline transition-colors">
                     {item}
                   </a>

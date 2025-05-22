@@ -1,8 +1,20 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { 
+  FaFacebookF, 
+  FaTwitter, 
+  FaLinkedinIn, 
+  FaInstagram 
+} from 'react-icons/fa';
 
 const Contact = () => {
+  const socialMedia = [
+    { name: 'facebook', icon: <FaFacebookF />, url: '#' },
+    { name: 'twitter', icon: <FaTwitter />, url: '#' },
+    { name: 'linkedin', icon: <FaLinkedinIn />, url: '#' },
+    { name: 'instagram', icon: <FaInstagram />, url: '#' }
+  ];
+
   return (
     <section id="contact" className="section-padding bg-blumen-dark text-white">
       <div className="container mx-auto">
@@ -21,34 +33,32 @@ const Contact = () => {
                   <div>
                     <h4 className="font-medium text-blumen-primary">Global Headquarters</h4>
                     <address className="not-italic text-gray-300">
-                      123 Financial District<br />
-                      London, UK 10001
+                      Suite E9, SHM Complex, Mabushi,<br />
+                       Abuja (FCT)
                     </address>
                   </div>
-                  <div>
-                    <h4 className="font-medium text-blumen-primary">Africa Operations</h4>
-                    <address className="not-italic text-gray-300">
-                      456 Tech Park<br />
-                      Nairobi, Kenya
-                    </address>
-                  </div>
+                 
                 </div>
               </div>
               
               <div>
                 <h3 className="text-xl font-semibold mb-2">Contact Information</h3>
                 <div className="space-y-2 text-gray-300">
-                  <p>Email: <a href="mailto:info@blumenpay.com" className="text-blumen-primary hover:underline">info@blumenpay.com</a></p>
-                  <p>Phone: +1 (555) 123-4567</p>
+                  <p>Email: <a href="mailto:contact@blumentechnologies.com" className="text-blumen-primary hover:underline">contact@blumentechnologies.com</a></p>
+                  <p>Phone: +234 70 8080 8080</p>
                 </div>
               </div>
             </div>
             
             <div className="flex space-x-4">
-              {['facebook', 'twitter', 'linkedin', 'instagram'].map((social) => (
-                <a key={social} href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blumen-primary transition-colors">
-                  <span className="sr-only">{social}</span>
-                  <div className="w-5 h-5 bg-white/80"></div>
+              {socialMedia.map((social) => (
+                <a 
+                  key={social.name}
+                  href={social.url} 
+                  className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-blumen-primary transition-colors"
+                  aria-label={social.name}
+                >
+                  <span className="text-white text-lg">{social.icon}</span>
                 </a>
               ))}
             </div>
@@ -80,12 +90,12 @@ const Contact = () => {
                 </div>
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">Company</label>
-                  <input
-                    type="text"
-                    id="company"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blumen-primary focus:border-blumen-primary"
-                    placeholder="Your Company Ltd."
-                  />
+                    <input
+                      type="text"
+                      id="company"
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blumen-primary focus:border-blumen-primary"
+                      placeholder="Your Company Ltd."
+                    />
                 </div>
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>

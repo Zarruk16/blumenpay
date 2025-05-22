@@ -1,0 +1,126 @@
+/* Testimonials.module.css */
+.container {
+  padding: 2rem 0;
+  background: linear-gradient(to bottom, #f9fafb, white);
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .testimonialsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.testimonialCard {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.testimonialCard:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.starsContainer {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.quote {
+  font-style: italic;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.authorImage {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.partnersSection {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.partnerLogosContainer {
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+@media (min-width: 768px) {
+  .partnerLogosContainer {
+    width: 55%;
+  }
+}
+
+.gradientLeft {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 6rem;
+  background: linear-gradient(to right, #f9fafb, transparent);
+  z-index: 10;
+}
+
+.gradientRight {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 6rem;
+  background: linear-gradient(to left, #f9fafb, transparent);
+  z-index: 10;
+}
+
+.logosWrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.logosScroll {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  width: max-content;
+  animation: smoothScroll 10s linear infinite;
+}
+
+.logosScroll:hover {
+  animation-play-state: paused;
+}
+
+.logoImage {
+  height: 4rem;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.logoImage:hover {
+  opacity: 1;
+}
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 2));
+  }
+}
