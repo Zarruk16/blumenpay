@@ -22,7 +22,7 @@ const Features = () => {
     {
       icon: <Globe className="feature-icon" />,
       title: "Global Reach",
-      description: "Connect with payment systems across Africa, India, and worldwide with seamless integration."
+      description: "Connect with payment systems across Africa, Asia, and worldwide with seamless integration."
     },
     {
       icon: <Wallet className="feature-icon" />,
@@ -45,7 +45,7 @@ const Features = () => {
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             BlumenPay provides comprehensive payment integration solutions connecting businesses 
-            to global markets with focus on Africa, India, and beyond.
+            to global markets with focus on Africa, Asia, and beyond.
           </p>
         </div>
         

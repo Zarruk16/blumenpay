@@ -5,7 +5,7 @@ import { CheckCircle } from 'lucide-react';
 
 const Benefits = () => {
   const benefitsList = [
-    "Seamless integration with local payment systems across Africa and India",
+    "Seamless integration with local payment systems across Africa and Asia",
     "Support for multiple currencies and payment methods",
     "Enhanced security with fraud detection and prevention",
     "Real-time transaction monitoring and reporting",
@@ -26,7 +26,7 @@ const Benefits = () => {
             </h2>
             <p className="text-gray-600 mb-8">
               BlumenPay bridges the gap between global payment systems and local markets, 
-              enabling businesses to reach customers in Africa, India, and worldwide with 
+              enabling businesses to reach customers in Africa, Asia, and worldwide with 
               a single integration. Our platform is designed to simplify complex payment 
               processes while ensuring security, reliability, and accessibility.
             </p>

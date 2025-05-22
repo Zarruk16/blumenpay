@@ -51,7 +51,7 @@ const Footer = () => {
             </a>
             <p className="mb-4">
               Global payment integration solutions connecting businesses to markets worldwide,
-              with special focus on Africa, India, and beyond.
+              with special focus on Africa, Asia, and beyond.
             </p>
             <div className="flex space-x-4">
               {socialMedia.map((social) => (
