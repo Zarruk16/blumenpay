@@ -44,7 +44,7 @@ const Hero = () => {
 
           {/* Responsive Dashboard */}
           <div className="lg:w-1/2 w-full mt-8 lg:mt-0 flex justify-center z-10">
-            <div className="relative w-[80%] max-w-xl md:w-full">
+            <div className="relative w-[90%] max-w-xl md:w-full">
               <div className="animate-float">
                 <div className="bg-white shadow-2xl rounded-3xl p-4 sm:p-4 md:p-10 border border-gray-100 w-full">
                   <div className="mb-4 sm:mb-6 flex items-center justify-between">
@@ -62,7 +62,7 @@ const Hero = () => {
                   </div>
                   <div className="mb-4 sm:mb-6 bg-gray-50 rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-5">
                     <div className="text-sm sm:text-base md:text-lg text-gray-500 mb-1 sm:mb-2">Global Payment Volume</div>
-                    <div className="text-2xl sm:text-3xl md:text-3xl font-bold text-blumen-dark">$1,287,634,089.78</div>
+                    <div className="text-base sm:text-base md:text-2xl font-bold text-blumen-dark">$1,287,634,089.78</div>
                     <div className="mt-2 sm:mt-4 flex justify-between items-center">
                       <div className="h-2 sm:h-2 bg-gray-200 rounded-full w-full overflow-hidden">
                         <div className="h-full bg-gradient-to-r from-blumen-primary to-blumen-accent w-3/4"></div>
@@ -78,7 +78,7 @@ const Hero = () => {
                           <span className="text-xs sm:text-sm text-blue-600 font-medium">↑</span>
                         </div>
                       </div>
-                      <div className="text-lg sm:text-xl md:text-xl font-semibold text-blumen-dark mt-1 sm:mt-2">$20,354,218</div>
+                      <div className="text-base sm:text-base md:text-xl font-semibold text-blumen-dark mt-1 sm:mt-2">$20,354,218</div>
                     </div>
                     <div className="bg-purple-50 p-3 sm:p-4 md:p-5 rounded-lg sm:rounded-xl">
                       <div className="flex justify-between items-center">
@@ -87,7 +87,7 @@ const Hero = () => {
                           <span className="text-xs sm:text-sm text-purple-600 font-medium">↑</span>
                         </div>
                       </div>
-                      <div className="text-lg sm:text-xl md:text-xl font-semibold text-blumen-dark mt-1 sm:mt-2">$16,467,912</div>
+                      <div className="text-base sm:text-base md:text-xl font-semibold text-blumen-dark mt-1 sm:mt-2">$16,467,912</div>
                     </div>
                   </div>
                 </div>
