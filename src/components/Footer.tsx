@@ -1,4 +1,6 @@
 import React from 'react';
+import blumenLogo from '../assets/logo.png'; // Make sure this path is correct
+
 import { 
   FaFacebookF, 
   FaTwitter, 
@@ -42,30 +44,40 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-blumen-dark text-gray-300 py-12">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-          <div>
-            <a href="#" className="text-2xl font-bold text-white mb-4 block">
-              <span className="text-blumen-primary">Blumen</span>Pay
+  <footer className="bg-blumen-dark text-gray-300 py-12">
+  <div className="container mx-auto px-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+      <div>
+        <div className="flex items-center mb-4"> {/* Added flex container */}
+          <a href="#" className="flex items-center">
+            <img 
+              src={blumenLogo} 
+              alt="Blumen Logo" 
+              className="h-10 w-auto mr-2" // Added margin-right
+            />
+          </a>
+          <a href="#" className="text-2xl font-bold text-white">
+            <span className="text-blumen-primary">Blumen</span>Pay
+          </a>
+        </div>
+        
+        <p className="mb-4">
+          Global payment integration solutions connecting businesses to markets worldwide,
+          with special focus on Africa, Asia, and beyond.
+        </p>
+        <div className="flex space-x-4">
+          {socialMedia.map((social) => (
+            <a 
+              key={social.name}
+              href={social.url} 
+              className="text-gray-400 hover:text-white transition-colors"
+              aria-label={social.name}
+            >
+              {social.icon}
             </a>
-            <p className="mb-4">
-              Global payment integration solutions connecting businesses to markets worldwide,
-              with special focus on Africa, Asia, and beyond.
-            </p>
-            <div className="flex space-x-4">
-              {socialMedia.map((social) => (
-                <a 
-                  key={social.name}
-                  href={social.url} 
-                  className="text-gray-400 hover:text-white transition-colors"
-                  aria-label={social.name}
-                >
-                  {social.icon}
-                </a>
-              ))}
-            </div>
-          </div>
+          ))}
+        </div>
+      </div>
           
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Products</h3>
